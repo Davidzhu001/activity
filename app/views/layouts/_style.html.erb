@@ -1,0 +1,32 @@
+<% if signed_in? %>
+    <div class='style-switcher' id='switchswitchswitch'>
+      <div class='style-switcher-heading'>
+        <i class='btn btn-warning fa fa-user'></i>
+      </div>
+      <div class='style-switcher-body'>
+        <div class='style-switcher-reset'>
+          <%= link_to " Home", new_user_registration_path, :class => 'style-switcher-button green fa fa-home text-white' %>
+          </br>
+          <%= link_to " Edit Info", edit_user_registration_path, :class => 'style-switcher-button red fa fa-gear text-white' %>
+          </br> 
+          <%= link_to " My Blog", new_user_registration_path, :class => 'style-switcher-button mint fa fa-bars text-white' %>
+          </br>
+          <%= link_to " My Zone", new_user_registration_path, :class => 'style-switcher-button salmon fa fa-dashboard text-white' %>
+        </div>
+      </div>
+    </div>
+<% else %>
+  <div class='style-switcher' id="switchswitchswitch">
+    <div class='style-switcher-heading'>
+      <i class='btn btn-dark fa fa-user'></i>
+    </div>
+    <div class='style-switcher-body'>
+      <div class='style-switcher-reset'>
+        <%= link_to "Log In", new_user_session_path, :class => 'style-switcher-button blue' %>
+      </div>
+      <div class='style-switcher-reset'>
+       <%= link_to "Sign Up", new_user_registration_path, :class => 'style-switcher-button red' %>
+      </div>
+    </div>
+  </div>
+<% end %>
