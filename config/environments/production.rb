@@ -79,14 +79,14 @@ Rails.application.configure do
 
 
   # Devise mailer
-  config.action_mailer.default_url_options = { :host => 'xx.com' }
-  ActionMailer::Base.smtp_settings = {
-    :user_name => 'xxx',
-    :password => 'xxx',
-    :domain => 'xxxx',
-    :address => 'xxxx',
-    :port => xxx,
-    :authentication => :plain,
-    :enable_starttls_auto => true
-  }
+  # config.action_mailer.default_url_options = { :host => 'xx.com' }
+  # ActionMailer::Base.smtp_settings = {
+  #   :user_name => 'xxx',
+  #   :password => 'xxx',
+  #   :domain => 'xxxx',
+  #   :address => 'xxxx',
+  #   :port => xxx,
+  #   :authentication => :plain,
+  #   :enable_starttls_auto => true
+  # }
 end
