@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :gatherings
   root 'home#index'
   get '/about',    to: 'home#about'
   get '/index',    to: 'home#index'
